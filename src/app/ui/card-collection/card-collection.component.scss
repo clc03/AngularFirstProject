@@ -1,0 +1,10 @@
+.cards-list{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  grid-template-rows: repeat(3,2fr);
+  gap: 20px;
+}
+
+.cardings{
+  align-items: center;
+}
