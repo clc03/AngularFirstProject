@@ -1,0 +1,59 @@
+<!-- <div class="card">
+  @for (item of data;track item.title){
+    <app-productcards [pro]="item"></app-productcards>
+  }
+</div> -->
+
+<!-- <div class="container">
+<div class="row">
+  @for (item of categories; track item) {
+    <h1>{{item}}</h1>
+
+    <app-product-carosel></app-product-carosel>
+
+  }
+</div>
+<app-product-carosel></app-product-carosel>
+
+
+</div> -->
+
+<div class="heading">Rizz Mart</div>
+<div class="subheading">You will be cheaten.. for sure</div>
+<div class="cards">
+  @for(cat of categories; track cat){
+  @if (cat === 'electronics') {
+    <div class="head-pic">
+      <h1>{{ cat }}</h1>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8wxobOw2lGknPVdojeiDo53h1SOLWe7M2g&s" alt="">
+    </div>
+    <hr />
+  <app-product-carosel [cat]="cat"></app-product-carosel>
+  }
+  @if (cat === 'jewelery') {
+    <div class="head-pic">
+      <h1>{{ cat }}</h1>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6umn0iSDXcfwWeCX30onNPkYbRexMhw-sMw&s" alt="">
+    </div>
+    <hr />
+  <app-product-carosel [cat]="cat"></app-product-carosel>
+  }
+  @if (cat === "men's clothing") {
+    <div class="head-pic">
+      <h1>{{ cat }}</h1>
+      <img src="https://cdn.luxe.digital/media/2019/09/12084906/casual-dress-code-men-street-style-luxe-digital-1.jpg" alt="">
+    </div>
+    <hr />
+  <app-product-carosel [cat]="cat"></app-product-carosel>
+  }
+  @if (cat === "women's clothing") {
+    <div class="head-pic">
+      <h1>{{ cat }}</h1>
+      <img src="https://d1fufvy4xao6k9.cloudfront.net/images/blog/posts/2023/08/hockerty_business_casual_outfits_for_woman_013a099b_0b8b_43a2_886f_754716f88f1a.jpg" alt="">
+    </div>
+    <hr />
+  <app-product-carosel [cat]="cat"></app-product-carosel>
+  }
+
+  }
+</div>

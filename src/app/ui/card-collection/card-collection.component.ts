@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardsComponent } from "../cards/cards.component";
+import { cardcomponents } from '../../interface/interfaces';
 
 @Component({
   selector: 'app-card-collection',
@@ -9,7 +10,7 @@ import { CardsComponent } from "../cards/cards.component";
   styleUrl: './card-collection.component.scss'
 })
 export class CardCollectionComponent {
-  cardList = [
+  cardList: cardcomponents[] =[
   {
 
     "title": "Thiruvananthapuram",

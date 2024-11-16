@@ -1,7 +1,7 @@
 <div class="cardings">
   <div class="cards-list">
     @for (cards of cardList; track cards){
-      <app-cards title={{cards.title}} discription={{cards.desc}} image={{cards.image}}></app-cards>
+      <app-cards [data]="cards"></app-cards>
     }
     </div>
 </div>

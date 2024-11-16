@@ -1,0 +1,17 @@
+nav{
+  background-color: rgb(3, 3, 81);
+  height: 50px;
+  width: 100%;
+  left: 10px;
+  z-index: 1111;
+  margin-bottom: 50px;
+  ul{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+  }
+}
